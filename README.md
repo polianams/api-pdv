@@ -77,12 +77,14 @@ Nesse projeto API REST - PDV é possível:
 Essa API REST foi organizada de forma a manter a clareza e a modularidade do projeto. Os elementos da API REST estão distribuídos dentro da pasta `src`, como segue:
 
 - Arquivo `index.js`: Este é o ponto de entrada da aplicação, onde a execução do servidor é iniciada. Ele configura as dependências necessárias e inicia a escuta por requisições;
-- Arquivo `conexaoBanco`: Este arquivo é responsável por estabelecer a conexão com o banco de dados PostgreSQL, utilizando a biblioteca `knex`. Ele faz uso de variáveis de ambiente configuradas no arquivo `.env` para garantir a segurança e a flexibilidade das informações de conexão;
+- Pasta `config`: Esta pasta contém arquivos e dados que são essenciais para a configuração e personalização da aplicação. 
 - Pasta `controller`: Esta pasta abriga todas as funções responsáveis por executar as operações relacionadas às rotas da API;
 - Pasta `routes`: Esta pasta contém todos os arquivos onde as rotas da API estão definidas;
 - Pasta `database`: Aqui são armazenados os arquivos utilizados para construir as tabelas do banco de dados usando PostgreSQL;
 - Pasta `middleware`: Contém as definições de `middlewares`, que são funções intermediárias que podem ser executadas antes das rotas ou após as requisições;
 - Pasta `constants`: Esta pasta é responsável por armazenar as mensagens de erros e de sucesso do projeto;
+- Pasta `emails`: Responsável por organizar e armazenar as funções para envio de e-mails e templetes;
+- Pasta `utils`: Esta pasta é utilizada para armazenar componentes de código que não se encaixam diretamente em módulos específicos ou que são comuns a vários módulos dentro do projeto;
 - Pasta `schemas`: Nesta pasta, estão armazenados os `schemas` que definem a estrutura e as restrições dos objetos de dados utilizados pela API;
 
 - Fora da pasta `src`, na raiz do projeto, contém o arquivo `.env.exemple`. Esse arquivo é um modelo para configurar as variáveis de ambiente necessárias para o funcionamento adequado da aplicação.
@@ -132,7 +134,11 @@ Por fim, certifique-se de verificar no projeto as rotas disponíveis e os format
 - joi (versão 17.11.0);
 - jsonwebtoken (versão 9.0.2);
 - knex (versão 3.0.1);
-- pg ou node-postgres (versão 8.11.3).
+- pg ou node-postgres (versão 8.11.3);
+- aws-sdk (versão 2.1480.0);
+- multer (versão 1.4.5-lts.1);
+- nodemailer (6.9.7);
+- handlebars (4.7.8).
 
 3. Linguagem de programação utilizada:
    
