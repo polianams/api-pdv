@@ -1,4 +1,4 @@
-# 🛒 Back-end - API REST: PDV (Ponto de venda)
+# 🛒 Back-end - API REST: PDV (Ponto de Venda)
 
 <p align="center">
   <img alt="GitHub language count" src="https://img.shields.io/github/languages/count/Larissalaviniaba/Pdv-Code-Queens?color=blue">
@@ -20,7 +20,7 @@
 </p>
 
 <h4 align=center> 
-	🚧 API REST - PDV Code Queens 🚧
+	🚧 API REST - PDV (Ponto de Venda) 🚧
 </h4>
 
 <p align="center">
